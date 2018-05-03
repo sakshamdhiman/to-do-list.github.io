@@ -1,0 +1,102 @@
+html{
+  background: url("https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Simple-wood-dark-wood-photos-PIC-WPD009378.jpg")
+}
+.parent{
+  display:flex;
+}
+.to-do-list h1{
+  padding: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+}
+.fa-plus{
+  font-size:27px;
+  float:right;
+  margin-right: 200px;
+}
+.to-do-list{
+  color:#fff;
+  width: 550px;
+  margin:100px 0 0 100px ;
+
+}
+.completed{
+  color:rgb(128 ,128,128);
+  text-decoration: line-through;
+}
+.list{
+  list-style: none;
+  margin:0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+input{
+  width:550px;
+  outline: none;
+  height: 60px;
+  background: rgba(73, 73, 73, 0.5);
+  border: 0;
+  color:#ffffff;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 1.6em;
+  box-sizing: border-box;
+  background:linear-gradient(to right,rgba(73, 73, 73, 0.5),rgba(0, 0, 0, 0));
+}
+.fa-trash-alt{
+    color:red;
+}
+.list li {
+  text-transform: capitalize;
+  background:rgba(171, 172, 173, 0.5);
+  height:35px;
+  padding:10px;
+  line-height: 40px;
+  font-size: 1.5em;
+  background:linear-gradient(to right,black,rgba(0, 0, 0, 0));
+}
+.list li:nth-child(2n){
+  text-transform: capitalize;
+  background: rgba(73, 73, 73, 0.5);
+  height:35px;
+  padding:10px;
+  line-height: 40px;
+  font-size: 1.5em;
+  background:linear-gradient(to right, rgba(73, 73, 73, 0.5),rgba(0, 0, 0, 0));
+}
+span{
+  opacity:0;
+  display: inline-block;
+  width:0px;
+  transition:0.2s linear;
+}
+.list li:hover span{
+  opacity:1;
+  width:30px;
+}
+.quote{
+  float: right;
+  width:700px;
+  margin-right: 0 ;
+  margin-top: 120px;
+  padding: 0;
+  color:#fff;
+  font-size: 2.5em;
+  font-family: 'Niconne', cursive;
+font-family: 'IM Fell English', serif;
+}
+#quote-author{
+  float: right;
+}
+@media only screen and (max-width:1000px)
+{
+  .parent{
+    display:block;
+  }
+  .quote{
+    float: left;
+    margin-left: 30px;
+  }
+}
